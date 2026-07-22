@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Character</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="creator.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="creator-container">
+
+
+    <header class="creator-header">
+
+
+        <button onclick="location.href='index.html'">
+
+            ← Back
+
+        </button>
+
+
+        <h1>
+
+            Create Character
+
+        </h1>
+
+
+    </header>
+
+
+
+
+
+    <main class="creator-form">
+
+
+        <!-- Avatar -->
+
+        <div class="avatar-section">
+
+
+            <img id="avatarPreview"
+                 src="assets/default-avatar.png"
+                 alt="Avatar Preview">
+
+
+
+            <label for="avatarInput">
+
+                Upload Avatar
+
+            </label>
+
+
+            <input type="file"
+                   id="avatarInput"
+                   accept="image/*">
+
+
+        </div>
+
+
+
+
+
+        <!-- Name -->
+
+        <label>
+
+            Character Name
+
+        </label>
+
+
+        <input type="text"
+               id="characterName"
+               placeholder="Example: Patrick Jane">
+
+
+
+
+
+
+
+        <!-- Greeting -->
+
+        <label>
+
+            Greeting
+
+        </label>
+
+
+        <textarea
+            id="characterGreeting"
+            rows="5"
+            placeholder="The first thing your character says...">
+        </textarea>
+
+
+
+
+
+
+
+        <!-- Personality -->
+
+        <label>
+
+            Personality
+
+        </label>
+
+
+        <textarea
+            id="characterPersonality"
+            rows="6"
+            placeholder="Describe how your character behaves...">
+        </textarea>
+
+
+
+
+
+
+
+        <!-- Scenario -->
+
+        <label>
+
+            Scenario
+
+        </label>
+
+
+        <textarea
+            id="characterScenario"
+            rows="6"
+            placeholder="Describe the situation or world...">
+        </textarea>
+
+
+
+
+
+
+
+        <!-- Example Dialogue -->
+
+        <label>
+
+            Example Dialogue (Optional)
+
+        </label>
+
+
+        <textarea
+            id="exampleDialogue"
+            rows="6"
+            placeholder="Example:
+
+You: Hello
+Character: Nice to meet you...">
+        </textarea>
+
+
+
+
+
+
+        <button id="saveCharacter">
+
+            💾 Save Character
+
+        </button>
+
+
+
+    </main>
+
+
+</div>
+
+
+</body>
+
+</html>
