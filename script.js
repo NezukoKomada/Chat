@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Open character creator
     createButton.addEventListener("click", () => {
 
-        window.location.href = "create.html";
+        window.location.href = "creator.html";
 
     });
 
