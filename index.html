@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My AI Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header class="top-bar">
+
+    <div class="logo">
+
+        <h1>My AI Chat</h1>
+
+        <p>Create and chat with your own AI characters</p>
+
+    </div>
+
+
+    <button id="createCharacter">
+
+        + Create Character
+
+    </button>
+
+
+</header>
+
+
+
+<main class="home">
+
+
+    <section id="emptyState" class="empty-state">
+
+        <h2>No Characters Yet</h2>
+
+        <p>
+            Create your first character and start chatting!
+        </p>
+
+    </section>
+
+
+
+    <section id="characterContainer"
+             class="character-grid">
+
+        <!-- Character cards will be created here by script.js -->
+
+    </section>
+
+
+</main>
+
+
+
+
+<!-- Character Card Template -->
+
+<template id="characterTemplate">
+
+
+    <div class="character-card">
+
+
+        <img class="avatar"
+             src="assets/default-avatar.png"
+             alt="Character Avatar">
+
+
+
+        <div class="character-details">
+
+
+            <h2 class="name">
+
+                Character Name
+
+            </h2>
+
+
+            <p class="personality">
+
+                Personality
+
+            </p>
+
+
+            <p class="scenario">
+
+                Scenario
+
+            </p>
+
+
+        </div>
+
+
+
+
+        <div class="card-buttons">
+
+
+            <button class="chatButton">
+
+                💬 Start Chat
+
+            </button>
+
+
+            <button class="editButton">
+
+                ✏️ Edit
+
+            </button>
+
+
+            <button class="deleteButton">
+
+                🗑 Delete
+
+            </button>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</template>
+
+
+
+</body>
+
+</html>
